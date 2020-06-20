@@ -15,7 +15,8 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@ionic/core": "^5.0.7",
-    "@stencil/core": "^1.12.2"
+    "@ionic/core": "^5.2.2",
+    "@stencil/core": "^1.14.0",
+    "workbox-build": "4.3.1"
   }
 }
