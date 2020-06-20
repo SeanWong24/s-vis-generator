@@ -1,0 +1,1 @@
+import{r as o,h as n,H as r}from"./p-cd08f63e.js";const e=class{constructor(n){o(this,n)}render(){return n(r,null,n("ion-header",null,n("ion-toolbar",{color:"primary"},n("ion-title",null,"S Vis Generator"))),n("ion-content",{class:"ion-padding"},n("ion-button",{href:"/line-chart",expand:"block"},"Generate Line Chart")))}};e.style=":host{display:block}";export{e as app_home}
