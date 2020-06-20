@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppHome {
     }
+    interface AppLineChart {
+    }
     interface AppRoot {
     }
 }
@@ -18,6 +20,12 @@ declare global {
         prototype: HTMLAppHomeElement;
         new (): HTMLAppHomeElement;
     };
+    interface HTMLAppLineChartElement extends Components.AppLineChart, HTMLStencilElement {
+    }
+    var HTMLAppLineChartElement: {
+        prototype: HTMLAppLineChartElement;
+        new (): HTMLAppLineChartElement;
+    };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
     var HTMLAppRootElement: {
@@ -26,16 +34,20 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
+        "app-line-chart": HTMLAppLineChartElement;
         "app-root": HTMLAppRootElement;
     }
 }
 declare namespace LocalJSX {
     interface AppHome {
     }
+    interface AppLineChart {
+    }
     interface AppRoot {
     }
     interface IntrinsicElements {
         "app-home": AppHome;
+        "app-line-chart": AppLineChart;
         "app-root": AppRoot;
     }
 }
@@ -44,6 +56,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+            "app-line-chart": LocalJSX.AppLineChart & JSXBase.HTMLAttributes<HTMLAppLineChartElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
         }
     }

@@ -16,7 +16,7 @@ export class AppHome {
         </ion-header>
 
         <ion-content class="ion-padding">
-          Put something here
+          <ion-button href="/line-chart" expand="block">Generate Line Chart</ion-button>
         </ion-content>
       </Host>
     )
